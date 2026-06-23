@@ -181,9 +181,7 @@ http://127.0.0.1:8000/
 
 Ссылка на репозиторий проекта:
 
-```text
-<сюда вставить ссылку на GitHub-репозиторий>
-```
+https://github.com/4geg/Project_control_Greenberg_Zhelnin
 
 ## Назначение проекта
 
