@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1>Вход в систему</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <label>Имя пользователя</label>
+    {{ form.username }}
+
+    <label>Пароль</label>
+    {{ form.password }}
+
+    <button type="submit" class="btn">Войти</button>
+</form>
+{% endblock %}

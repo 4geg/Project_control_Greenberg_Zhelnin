@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1>Удаление проекта</h1>
+
+<p>
+    Вы действительно хотите удалить проект
+    <strong>{{ project.name }}</strong>?
+</p>
+
+<p>
+    Вместе с проектом будут удалены все связанные с ним задачи.
+</p>
+
+<form method="post">
+    {% csrf_token %}
+
+    <button type="submit" class="btn btn-danger">Удалить</button>
+    <a href="{% url 'project_detail' project.id %}" class="btn btn-secondary">Отмена</a>
+</form>
+{% endblock %}
